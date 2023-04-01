@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -24,8 +25,17 @@ h1 {
   grid-column-gap: 2rem;
   padding-left: 10rem;
   padding-right: 10rem;
+  margin-bottom: 5rem;
 }
 
+.grid-section-2 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .grid-article-1 {
   grid-row: span 3;
 }
@@ -42,6 +52,10 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .grid-section-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .grid-article-1,
   img {
     width: 99%;
@@ -55,11 +69,21 @@ img {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .grid-section-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 /* Laptop View */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .grid-section-1 {
     grid-template-columns: 1fr 1fr;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .grid-section-2 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -72,4 +96,36 @@ img {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+  .grid-section-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.button {
+  border: 0px;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  background-color: blue;
+  transform: scale(0.9);
+  color: white;
+}
+.button:active {
+  transform: scale(1.2);
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
